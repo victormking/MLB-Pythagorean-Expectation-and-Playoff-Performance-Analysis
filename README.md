@@ -1,30 +1,73 @@
-# MLB-Pythagorean-Expectation-and-Playoff-Performance-Analysis
+## MLB-Pythagorean-Expectation-and-Playoff-Performance-Analysis
 
 ## Project Overview
-This project explores the impact of various baseball statistics on Major League Baseball (MLB) playoff win percentages. By analyzing data from MLB seasons 2012-2023, we investigate how different performance metrics such as home runs per plate appearance, on-base plus slugging (OPS) ratios, and Pythagorean win expectations correlate with teams' success in the playoffs.
+
+This project explores how various baseball statistics impact playoff success in Major League Baseball (MLB) from 2012 to 2023. We examine batting and pitching performance metrics and their correlations with playoff winning percentages using Pythagorean expectations. By analyzing comprehensive team data, this study reveals how ratios like home runs per plate appearance, singles per plate appearance, and strikeout ratios predict playoff success.
 
 ## Objectives
-- To determine the relationship between various batting and pitching statistics and MLB playoff outcomes.
-- To apply statistical analysis techniques to identify key predictors of playoff success.
-- To visualize the impact of these statistics on playoff win percentages using scatter plots and regression analysis.
+
+Examine Relationships: Explore the relationships between batting/pitching statistics and playoff success.
+
+Identify Key Predictors: Apply statistical analysis to uncover key metrics that predict playoff performance.
+
+Visualize Statistical Impact: Utilize scatter plots and regression analysis to show the impact of these statistics on playoff win percentages.
 
 ## Data Sources
-- MLB team performance data scraped from Baseball Reference covering multiple seasons from 2012 to 2023.
-- Playoff game outcomes and team performance metrics collected over the same period.
+
+Baseball Reference: MLB team data from Baseball Reference, spanning the 2012-2023 seasons.
+
+Playoff Metrics: Outcomes and performance metrics for playoff games during the same period.
 
 ## Methodology
-- **Data Scraping**: Utilized the `rvest` package to scrape MLB statistics for batting against and batting for from Baseball Reference.
-- **Data Cleaning and Transformation**: Processed the scraped data to calculate ratios like home runs per plate appearance and singles per plate appearance for better comparative analysis.
-- **Statistical Analysis**:
-  - Performed linear regression to explore the relationships between the calculated ratios and playoff winning percentages.
-  - Used residual analysis to assess the fit of the models and identify outliers.
-- **Visualization**:
-  - Created scatter plots with regression lines to visualize trends.
-  - Used `ggplot2` for advanced graphical representations.
+
+## Data Scraping
+
+Used rvest to scrape MLB statistics for batting (both for and against) from Baseball Reference.
+
+Extracted multiple tables, processed them for consistency, and created ratios for comparative analysis.
+
+## Data Cleaning and Transformation
+
+Processed the scraped data to calculate relevant metrics, such as home runs per plate appearance, singles per plate appearance, unintentional walks, and strikeouts.
+
+Adjusted data fields for consistent team naming and corrected inaccuracies.
+
+## Statistical Analysis
+
+Applied linear regression to explore relationships between calculated ratios (e.g., home run ratio) and playoff winning percentages.
+
+Conducted residual analysis to identify model accuracy and unexplained variability.
+
+Performed exploratory data analysis to summarize trends and patterns in the data.
+
+## Visualization
+
+Created scatter plots with regression lines to visualize data trends and identify influential variables.
+
+Utilized ggplot2 for advanced graphical representations of the relationships.
 
 ## Key Findings
-- **Statistical Significance**: Certain statistics like HR per PA Ratio and OPS Ratio showed a significant correlation with playoff win percentages, indicating that teams with higher values in these metrics tend to perform better in playoffs.
-- **Model Fit**: Residual analysis helped in understanding the variability in playoff performances that wasn't explained by the models.
-- **Predictive Analysis**: The use of Pythagorean expectation provided insights into the expected performance of teams based on their run differentials.
 
-In Conclusion, This project provides a thorough analysis of MLB team performance metrics and their impact on postseason outcomes, using a data-driven approach supported by statistical models and visualizations
+Statistical Significance
+
+Home Runs per Plate Appearance (HR/PA) and On-base Plus Slugging (OPS) ratios have a strong correlation with playoff win percentages. Teams with higher ratios tend 
+to perform better in the playoffs.
+
+Model Fit and Residual Analysis
+
+Residual analysis highlighted variability unexplained by the model, providing insights into potential outliers and model refinements.
+
+Identified teams that exceeded or underperformed relative to their expected Pythagorean expectations.
+
+## Predictive Analysis
+
+Pythagorean expectations provided valuable insights into predicting team success based on their run differentials.
+
+Regression models utilizing home run ratios, singles ratios, and strikeouts identified key performance drivers.
+
+## Conclusion
+
+This project comprehensively analyzes the influence of MLB performance metrics on playoff outcomes. By using detailed statistical analysis and visualizations, this 
+study reveals key predictors that directly impact team success. The combination of historical data and predictive models provides useful insights for future playoff 
+predictions and strategic decision-making in professional baseball.
+
